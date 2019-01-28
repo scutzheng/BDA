@@ -1,7 +1,15 @@
 ## Chapter 2, Worksheet for examples
 
 sapply( "pause.R", source)
-sapply( "Chapter2.R", source)
+sapply( "distributions.R", source)
+
+# Plot the Jeffreys's prior for Bernoulli response
+
+ps = seq(0.01,0.99,0.01)
+fs = ps^{-1}*(1-ps)^{-1}
+plot(ps,fs,type="l")
+
+pause("Move on to examples")
 
 # Section 2.1
 # Reproduce Figure 2.1 of BDA
@@ -84,9 +92,6 @@ sep = "\n"))
 
 pause("")
 
-cat("Section 2.2: Posterior as a compromise between data and prior information")
-cat("BLACKBOARD")
-
 pause("")
 
 cat("Section 2.4: Informative prior distributions")
@@ -108,8 +113,6 @@ cat(paste("This yields the following calculations for the posterior:",
 "Var( theta | y ) = ( E( theta | y )(1 - E( theta | y )) ) / ( a + b + n + 1 )",
 "","",
 sep = "\n"))
-
-pause("Discussion of conjugate prior families ...")
 
 cat(paste("Example (p. 37) of placenta previa", "",
 "980 births (n = 980)",
