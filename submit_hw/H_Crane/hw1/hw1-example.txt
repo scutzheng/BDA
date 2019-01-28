@@ -1,0 +1,1 @@
+Within "submit_hw" directory, make sub-directory with your name.  For each homework, create a sub-directory "hw1", "hw2", etc. and submit homework by commiting any write-up and code to the appropriate folder.
